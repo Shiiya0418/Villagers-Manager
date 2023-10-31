@@ -32,6 +32,7 @@ docker run --rm \
 - Nickname2
 - main_instrument
 - sub_instrument
+- role
 
 ### ライブ管理用テーブル: live_events
 - id（non null）
