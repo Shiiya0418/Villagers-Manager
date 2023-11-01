@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/villager_list', [\App\Http\Controllers\Manager\VillagerListController::class, 'show']);
+Route::get('/villager_list/{year}', [\App\Http\Controllers\Manager\VillagerListController::class, 'showId']);
