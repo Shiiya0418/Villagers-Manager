@@ -28,4 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+Route::get('/villagers_list/{year}', [\App\Http\Controllers\Manager\VillagerListController::class, 'showId']);
+
 require __DIR__.'/auth.php';
