@@ -29,6 +29,6 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::get('/villager_list/{year}', [\App\Http\Controllers\Manager\VillagerListController::class, 'showId']);
+Route::get('/villager-list/{year}', [\App\Http\Controllers\Manager\VillagerListController::class, 'showId']);
 
 require __DIR__.'/auth.php';
