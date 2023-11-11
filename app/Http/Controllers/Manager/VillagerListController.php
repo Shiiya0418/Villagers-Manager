@@ -10,7 +10,8 @@ class VillagerListController extends Controller
 {
     public function showId($year)
     {
-        $members = Member::all();
+        // $members = Member::all();
+        $members = Member::where('year', $year)->orderBy('student_number')->get();
         return view('manager.villager-list', ['year' => $year, 'members' => $members]);
     }
 }
