@@ -8,6 +8,7 @@
 <body>
     <h1 class="container mx-auto text-xl">村民一覧表</h1>
     <h2 class="text-xl">{{ $year }}年</h2>
+    <a href="/villager-list/1" class="px-2 bg-blue-500 text-white rounded hover:bg-blue-600">村民登録</a>
     <div>
     @for ($i = 1; $i <= 6; $i++)
     <a href="/villager-list/{{ $i }}" class="px-2 bg-blue-500 text-white rounded hover:bg-blue-600">{{$i}}年</a>
