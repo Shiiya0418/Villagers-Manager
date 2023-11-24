@@ -32,6 +32,6 @@ Route::middleware('auth')->group(function () {
 Route::get('/villager-list/{year}', [\App\Http\Controllers\Manager\VillagerListController::class, 'show'])->name('villager.list');
 Route::post('/villager-register', [\App\Http\Controllers\Villager\VillagerRegisterController::class, 'create'])->name('villager.create');
 Route::get('/villager-register-form', [\App\Http\Controllers\Villager\VillagerRegisterController::class, 'show'])->name('villager.show');
-
+Route::get('/live-event-list', [\App\Http\Controllers\Manager\LiveEventListController::class, 'show'])->name('manager.live-event-list');
 
 require __DIR__.'/auth.php';
