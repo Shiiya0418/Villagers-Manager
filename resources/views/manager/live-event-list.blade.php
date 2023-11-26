@@ -21,7 +21,7 @@
         </table>
     </div>
     <div>
-        <a href="/live-event-list" class="px-2 bg-blue-500 text-white rounded hover:bg-blue-600">新規ライブ登録</a>
+        <a href="/live-event-register" class="px-2 bg-blue-500 text-white rounded hover:bg-blue-600">新規ライブ登録</a>
     </div>
 </body>
 </html>
