@@ -35,5 +35,8 @@ Route::get('/villager-register', [\App\Http\Controllers\Villager\VillagerRegiste
 Route::get('/live-event-list', [\App\Http\Controllers\Manager\LiveEventListController::class, 'show'])->name('manager.live-event.list');
 Route::post('/live-event-register-form', [\App\Http\Controllers\Manager\LiveEventRegisterController::class, 'create'])->name('manager.live-event.create');
 Route::get('/live-event-register', [\App\Http\Controllers\Manager\LiveEventRegisterController::class, 'show'])->name('manager.live-event.show');
+Route::post('/band-register', [\App\Http\Controllers\Villager\BandRegisterController::class, 'create'])->name('band.create');
+Route::get('/band-register', [\App\Http\Controllers\Villager\BandRegisterController::class, 'show'])->name('villager.band.show');
+
 
 require __DIR__.'/auth.php';
